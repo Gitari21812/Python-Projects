@@ -1,9 +1,15 @@
-#Exponents#
-def exponents(bases, powers):
-    new_list = []
-    for base in bases:
-        for power in powers:
-            new_list.append(base**power)
-    return new_list
 
-print(exponents([2, 3, 4], [1, 2, 3]))
+def count_multi_char_x(word, x):
+    splits = word.split(x)
+    return (len(splits) - 1)
+
+
+
+
+
+# Uncomment these function calls to test your function:
+print(count_multi_char_x("mississippi", "iss"))
+# should print 2
+print(count_multi_char_x("apple", "pp"))
+# should print 1
+
